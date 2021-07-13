@@ -1,0 +1,7 @@
+function x(n){
+    var a=Array(n);
+    var b=a.fill(0);
+    var c=b.reduce((x, y, z) => x + x * z,1);
+    console.log(c);
+}
+x(8);
