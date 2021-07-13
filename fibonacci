@@ -1,0 +1,8 @@
+function f(n){
+var x=Array(n);
+var y=x.fill(0);
+var z=y.reduce((a,b,i)=>{var x=(i<=1)? a[i]=i: a[i]=a[i-1]+a[i-2];
+    return a},[]);
+    console.log(z);
+}
+f(5);
